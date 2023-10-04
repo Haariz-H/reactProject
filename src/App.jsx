@@ -1,14 +1,16 @@
 import React from "react";
 
 function App() {
-  let username = "Kaneki";
-  let isLoggedIn = "False";
-  // if(isLoggedIn){
-
-  // }
+  let characters = ["Levi", "Yagami", "Light", "Annie"];
 
   return (
-    <div>Welcome {isLoggedIn === "True" ? username : "Anonymous User"}</div>
+    <div>
+      <ul>
+        {characters.map((character) => (
+          <li>{character}</li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
