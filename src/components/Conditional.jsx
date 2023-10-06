@@ -2,7 +2,7 @@ import React from "react";
 
 function Conditional() {
   let name = "Yagami";
-  let gender = "Female";
+  let gender = "Male";
   let sal;
   if (gender === "Male") {
     sal = "Mr.";

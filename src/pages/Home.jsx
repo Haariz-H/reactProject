@@ -19,7 +19,7 @@ function Home() {
           ></Cards>
           <Cards
             img="../tenma.jpg"
-            Title="Tenma"
+            title="Tenma"
             content="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
             Exercitationem est eaque, voluptatem voluptatibus officia itaque
             odit odio eveniet, quos quas quae eius! Eligendi dolorem minima
