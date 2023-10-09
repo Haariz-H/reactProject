@@ -1,14 +1,23 @@
 import React, { useState } from "react";
 
 function Gender() {
+  const [name, setName] = useState("");
   const [gender, setGender] = useState("");
-  const genderSet = () => {
-    setGender("Male");
+  const genderSetMale = () => {
+    setGender("Mr. ");
   };
+  const genderSetFemale = () => {
+    setGender("Ms. ");
+  };
+  // const handleGender = (event) => {
+  //   setGender(event.target.value);
+  // };
 
   return (
     <div>
-      <h1>{gender}</h1>
+      <h1>
+        Name: <input type="text" onChange={(e) => setName(e.target.value)} />
+      </h1>
       <div class="form-check">
         <input
           class="form-check-input"
@@ -16,9 +25,9 @@ function Gender() {
           name="flexRadioDefault"
           id="flexRadioDefault1"
           value="male"
-          onChange={genderSet}
+          onClick={genderSetMale}
         />
-        <label class="form-check-label" for="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault2">
           Male
         </label>
       </div>
@@ -29,12 +38,17 @@ function Gender() {
           name="flexRadioDefault"
           id="flexRadioDefault2"
           value="female"
-          onChange={(e) => setGender(e.target.value)}
+          onClick={genderSetFemale}
         />
         <label class="form-check-label" for="flexRadioDefault2">
           Female
         </label>
       </div>
+
+      <h1>
+        {gender}
+        {name}
+      </h1>
     </div>
   );
 }

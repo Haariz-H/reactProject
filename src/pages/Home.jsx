@@ -1,6 +1,6 @@
 import React from "react";
 // import List from "../components/List";
-import Carousel from "../components/Carousel";
+// import Carousel from "../components/Carousel";
 import Cards from "../components/Cards";
 function Home() {
   return (
